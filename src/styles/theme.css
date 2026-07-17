@@ -1,0 +1,45 @@
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/manrope/700.css';
+@import '@fontsource/sora/600.css';
+@import '@fontsource/sora/700.css';
+
+:root {
+	--sl-font: 'Manrope', sans-serif;
+	--sl-color-accent: #1d6bff;
+	--sl-color-accent-high: #1357d2;
+	--sl-color-accent-low: #dbe7ff;
+
+	--dtq-green: #1a7f4b;
+	--dtq-green-bg: #e6f7ec;
+	--dtq-amber: #96590a;
+	--dtq-amber-bg: #fff4e0;
+	--dtq-red: #c0362c;
+	--dtq-red-bg: #fdeaea;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+:root[data-theme='light'] {
+	--sl-color-text: #182335;
+	--sl-color-bg: #f4f6fb;
+	--sl-color-bg-nav: #ffffff;
+	--sl-color-bg-sidebar: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+.site-title {
+	font-family: 'Sora', sans-serif;
+}
